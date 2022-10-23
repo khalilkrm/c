@@ -1,0 +1,50 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "types.h"
+
+/*DECLARATIONS*/
+
+typedef struct unite {
+ 
+ /*VALUES*/
+ char ID[10+1];
+ char name[100+1];
+ char owner[60];
+ 
+ int credites;
+ 
+ /*NODES*/
+ struct unite * prerequired_head;
+ struct unite * corequired_head;
+
+} unite_t;
+
+unite_t unite_creation() {
+ 
+ unite_t u;
+ 
+ u.prerequired_head = NULL;
+ u.corequired_head = NULL;
+ 
+ return u;
+}
+
+void add_prerequired(unite_t * to_add, unite_t * destination) {
+
+ 
+ while() {
+ 
+ 
+ 
+ }
+
+}
+
+
+
+int main(void) {
+ 
+ return EXIT_SUCCESS;
+
+}
